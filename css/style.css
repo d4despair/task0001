@@ -1,6 +1,11 @@
 *{
     margin: 0 auto;
-    font:14px Georgia,'Microsoft Yahei', 'Times New Roman', Times, serif;
+    font: 14px 'Microsoft YaHei', sans-serif;
+}
+
+code{
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 12px;
 }
 
 body{
@@ -8,6 +13,7 @@ body{
 }
 
 /*页眉的样式*/
+
 .header{
     position: relative;
     width: 100%;
@@ -39,6 +45,7 @@ body{
     color: #fff;
     font-size: 30px;
     font-weight: bold;
+    font-family: Georgia,'Microsoft Yahei', 'Times New Roman', Times, serif;
 }
 
 .nav-warp{
@@ -68,33 +75,33 @@ body{
 
 /*中心内容的样式*/
 
-.inner-main{
+.main{
     
     padding-bottom: 150px;
 }
 
-.inner-main-container{
+.main-container{
     width: 980px;
     position: relative;
 }
 
-.main{
+.main-article-warp{
     position: relative;
-    width: 685px;
+    width: 700px;
     margin: 20px 0;
 }
 
 /*article-label*/
 .article-label{
     position:absolute;
-    left: -40px;
+    left: -50px;
 }
 
 .article-label div{
-    width: 40px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     color: #fff;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .label-top{
@@ -107,7 +114,7 @@ body{
 }
 
 .content{
-    padding: 20px 15px;
+    padding: 20px 20px;
     margin-bottom: 15px;
     background: #fff;
 }
@@ -133,9 +140,19 @@ body{
 }
 
 .author{
+    clear: right;
     text-align: right;
     color: #808080;
     padding-top: 2em;
+}
+
+.pages a{
+    text-decoration: none;
+    color: #000;
+}
+
+.pages a:hover{
+    opacity: 0.7;
 }
 
 .pages ul{
@@ -153,15 +170,20 @@ body{
 
 .pages li.page-now{
     background:rgb(18, 53, 85);
+    color: #fff;
 }
 
 /*sidebar*/
 
 .sidebar{
     position: absolute;
-    width: 280px;
+    width: 260px;
     height: 500px;
     right: 0;
+}
+
+.sidebar *{
+    font-family: Georgia,'Microsoft Yahei', 'Times New Roman', Times, serif;
 }
 
 .sidebar>div{
@@ -171,32 +193,102 @@ body{
     margin-bottom: 15px;
 }
 
-
 /*搜索栏*/
 
 .sidebar-search{
-    padding: 25px 0;
+    width: 260px;
+    padding: 20px 0;
 }
 
 .search-warp{
     position: relative;
-    width: 230px;
-    height: 50px;
-    left: 50%;
-    margin-left: -115px;
-    text-align: center;
-    border: solid 1px rgb(18, 53, 85);
-    opacity: 0.5;
-    display: block;
+    width: 210px;
+    height: 40px;
+    border: solid 1px rgba(18, 53, 85,1);
+    background: #fff;
 }
 
-.search-input{
-    float: left;
-    height: 50px;
-    width: 180px;
-    text-indent: 50px;
-    border: none;
+.search-glass{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 6px 5px;
+    border: solid 2px rgb(18, 53, 85);
+    border-radius: 25px;
 }
+
+.search-glass-bar{
+    position: absolute;
+    width: 8px;
+    transform: rotate(45deg);
+    top: 20px;
+    left: 17px;
+    border: solid 1px rgb(18, 53, 85);
+}
+
+.search-text{
+    float: left;
+    padding: 0 0 0 40px;
+    width: 160px;
+    height: 40px;
+    border: none;
+    background: inherit;
+    opacity: 0.5;
+}
+
+.search-text:hover{
+    opacity: 1;
+}
+
+.search-button{
+    width: 50px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: rgb(18, 53, 85);
+}
+
+.search-button:hover{
+    color: rgba(255, 255, 255,0.5);
+}
+
+/*边栏 目录*/
+
+.sidebar-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-menu li{
+    list-style-type: none;
+    height: 20px;
+    line-height: 20px;
+}
+
+.sidebar-menu a{
+
+    /*确定大小*/
+    display: block;
+    width: 230px;
+    padding: 16px 0 16px 25px;
+    margin-bottom: 1px;
+    background:#fff;
+    
+    /*内容*/   
+    text-decoration: none;
+    color:rgba(18, 53, 85,0.5);
+    
+    /*边框*/
+    border-width: 0 0 1px 5px;
+    border-color: rgba(18, 53, 85,0.5);
+    border-style: solid;
+}
+
+.sidebar-menu a:hover{
+    border-left-color:rgba(18, 53, 85,1);
+    color: rgba(18, 53, 85,1);
+}
+
 
 /*日历*/
 
@@ -214,8 +306,6 @@ body{
 .not-this-month{
     color: rgba(18, 53, 85,0.5);
 }
-
-
 
 .calendar th,td{
     text-align: center;
@@ -239,6 +329,10 @@ body{
     background: rgba(18, 53, 85,1);
     color: #fff;
 }
+
+
+
+/*标签群*/
 
 .tags-warp{
     width: 220px;
@@ -271,104 +365,7 @@ body{
 
 
 
-/*
 
-
-
-.sidebar-calendar ul{
-    text-align: center;
-    list-style-type: none;
-    padding: 0px;
-}
-
-.sidebar-calendar li{
-    display: inline;
-}
-
-.calendar-left,.calendar-right,.calendar-mid{
-    padding: 5px 33px;
-}
-
-.calendar-week{
-    margin: 5px 0;
-}
-
-.calendar-week li{
-    padding: 2px;
-    background: yellow;
-}
-
-.calendar-date{
-    margin: 5px 0;
-}
-
-.calendar-date li{
-    padding: 0 0 0 1.6em;
-    background: yellow;
-}
-
-*/
-
-
-
-.search-button{
-    position:absolute;
-    width: 50px;
-    height: 50px;  
-    right: 0;
-    color: #fff;
-    font-size: 20px;
-    background: rgb(18, 53, 85);
-    border: none;
-}
-
-.search-button:hover{
-    background: rgb(209, 73, 78);
-}
-
-.search-warp:hover{
-    opacity: 1;
-}
-
-.search-glass{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    margin: 5px 5px 6px 5px;
-    border: solid 2px rgb(18, 53, 85);
-    border-radius: 25px;
-}
-
-.search-glass-bar{
-    position: absolute;
-    width: 10px;
-    transform: rotate(45deg);
-    top: 35px;
-    left: 32px;
-    border: solid 1px rgb(18, 53, 85);
-}
-
-/*边栏 目录*/
-.sidebar-menu *{
-    color: rgba(18, 53, 85,0.7);
-    text-decoration: none;
-}
-
-.sidebar-menu div{
-    width: 255px;
-    height: 50px;
-    padding-left: 20px;
-    line-height: 50px;
-    margin-bottom: 1px;
-    border-width: 0 0 1px 5px;
-    border-color: rgba(18, 53, 85,0.5);
-    border-style: solid;
-}
-
-.sidebar-menu div:hover{
-    border-left-color: rgba(18, 53, 85,1);
-    color: rgba(18, 53, 85,1);
-}
 
 
 /*页脚的样式*/
@@ -451,12 +448,17 @@ body{
 .copyright{
     clear: left;
     text-align: center;
+    
 }
 
 .copyright p{
     padding: 20px;
+    font-size: 12px;
 }
 
 .copyright a:hover{
     opacity: 0.7;
 }
+
+
+
