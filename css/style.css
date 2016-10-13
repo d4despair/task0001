@@ -184,6 +184,7 @@ body{
 
 .sidebar *{
     font-family: Georgia,'Microsoft Yahei', 'Times New Roman', Times, serif;
+    color: rgba(18, 53, 85,1);
 }
 
 .sidebar>div{
@@ -191,6 +192,12 @@ body{
     background: #fff;
     width:100%;
     margin-bottom: 15px;
+}
+
+.sidebar h1{
+    font-size: 16px;
+    color: #666;
+    padding: 0 0 10px 0;
 }
 
 /*搜索栏*/
@@ -204,7 +211,7 @@ body{
     position: relative;
     width: 210px;
     height: 40px;
-    border: solid 1px rgba(18, 53, 85,1);
+    border: solid 1px rgba(18, 53, 85,0.5);
     background: #fff;
 }
 
@@ -215,6 +222,7 @@ body{
     margin: 5px 5px 6px 5px;
     border: solid 2px rgb(18, 53, 85);
     border-radius: 25px;
+    opacity: 0.5;
 }
 
 .search-glass-bar{
@@ -233,11 +241,11 @@ body{
     height: 40px;
     border: none;
     background: inherit;
-    opacity: 0.5;
+    color: rgba(18, 53, 85,0.5);
 }
 
 .search-text:hover{
-    opacity: 1;
+    color: rgba(18, 53, 85,1);
 }
 
 .search-button{
@@ -245,11 +253,11 @@ body{
     height: 40px;
     border: none;
     color: #fff;
-    background: rgb(18, 53, 85);
+    background: rgba(18, 53, 85,0.5);
 }
 
 .search-button:hover{
-    color: rgba(255, 255, 255,0.5);
+    background: rgba(18, 53, 85,1);
 }
 
 /*边栏 目录*/
@@ -330,8 +338,6 @@ body{
     color: #fff;
 }
 
-
-
 /*标签群*/
 
 .tags-warp{
@@ -339,12 +345,6 @@ body{
     padding: 20px;
     line-height: 170%;
 }
-
-.tags-warp h1{
-    color: #666;
-    padding: 0 0 10px 0;
-}
-
 
 .tags-large{
     font-size: 20px;
@@ -363,9 +363,119 @@ body{
     color: #666;
 }
 
+/*gallery专用*/
+
+.gallery-content{
+    position: relative;
+    padding: 20px;
+    min-height: 500px;
+    background: #fff;
+    margin-top: 70px;
+}
+
+/*gallery标签*/
+
+.gallery-tab{
+    position: absolute;
+    margin-top: -75px;
+    margin-left: -20px;
+}
+
+.gallery-tab ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-tab li{
+    float: left;
+    padding: 15px;
+    margin: 0 1px 0 0;
+    display: inline-block;  
+    background: #fff;
+    border-top: solid 5px rgba(18, 53, 85,0.5);
+}
+
+.gallery-tab li:hover{
+    border-bottom: solid 1px #fff;
+    border-top: solid 5px rgba(18, 53, 85,1);
+}
+
+.gallery-content article{
+    float: left;
+}
+
+.gallery-article-01{
+    float: left;
+    width: 300px;
+    background: yellow;
+}
+
+/*gallery中的人气排行榜*/
+
+.rank-warp{
+    padding: 20px;
+}
+
+.rank-warp ol{
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.rank-warp li{
+    position: relative;
+    padding: 5px 0 5px 110px;
+    height: 1em;
+    line-height: 1em;
+}
+
+.rank-warp li>div{
+    position: absolute;
+    left: 3px;
+    width: 100px;
+    height: 1em;
+    background: #fff;
+    border: solid 1px rgba(18, 53, 85,1);
+}
+
+.rank-warp span{
+    position: absolute;
+    left: -2em;
+    top: -0.1em;
+    width: 1em;
+    height: 1em;
+    padding: 0.2em;
+    line-height: 1.2em;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    background: rgba(18, 53, 85,1);
+}
 
 
+.li-no-01,.li-no-02,.li-no-03,.li-no-04,.li-no-05{
+    position: absolute;
+    left: 0px;
+    height: 1em;
+    background: rgba(18, 53, 85,1);
+}
 
+.li-no-01{
+    width: 100%;
+}
+.li-no-02{
+    width: 80%;
+}
+.li-no-03{
+    width: 60%;
+}
+.li-no-04{
+    width: 40%;
+}
+.li-no-05{
+    width: 20%;
+}
 
 
 /*页脚的样式*/
