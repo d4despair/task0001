@@ -381,35 +381,61 @@ body{
     margin-left: -20px;
 }
 
+
 .gallery-tab ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+.gallery-tab a{
+    text-decoration: none;
+    color: rgba(18, 53, 85,1);
+}
+
 .gallery-tab li{
     float: left;
     padding: 15px;
     margin: 0 1px 0 0;
-    display: inline-block;  
     background: #fff;
-    border-top: solid 5px rgba(18, 53, 85,0.5);
 }
 
 .gallery-tab li:hover{
     border-bottom: solid 1px #fff;
+}
+
+.tab-all{
+    border-top: solid 5px rgba(18, 53, 85,0.5);
+}
+.tab-all:hover{
     border-top: solid 5px rgba(18, 53, 85,1);
 }
 
-.gallery-content article{
-    float: left;
+.tab-js{
+    border-top: solid 5px rgba(209, 73, 78,0.5);
+}
+.tab-js:hover{
+    border-top: solid 5px rgba(209, 73, 78,1);
+}
+.tab-ui{
+    border-top: solid 5px rgba(230, 155, 3,0.5);
+}
+.tab-ui:hover{
+    border-top: solid 5px rgba(230, 155, 3,1);
+}
+.tab-frame{
+    border-top: solid 5px rgba(219, 208, 167,0.5);
+}
+.tab-frame:hover{
+    border-top: solid 5px rgba(219, 208, 167,1);
+}
+.tab-app{
+    border-top: solid 5px rgba(255, 238, 210,0.5);
+}
+.tab-app:hover{
+    border-top: solid 5px rgba(255, 238, 210,1);
 }
 
-.gallery-article-01{
-    float: left;
-    width: 300px;
-    background: yellow;
-}
 
 /*gallery中的人气排行榜*/
 
@@ -452,7 +478,6 @@ body{
     font-size: 12px;
     background: rgba(18, 53, 85,1);
 }
-
 
 .li-no-01,.li-no-02,.li-no-03,.li-no-04,.li-no-05{
     position: absolute;
