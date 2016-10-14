@@ -75,13 +75,12 @@ body{
 
 /*中心内容的样式*/
 
-.main{
-    
-    padding-bottom: 150px;
-}
+
 
 .main-container{
     width: 980px;
+    margin-bottom: 200px;
+    margin-top: 100px;
     position: relative;
 }
 
@@ -569,10 +568,106 @@ body{
 }
 
 
+/*about.html页面样式*/
+
+.about-left,.about-right{  
+    width: 487.5px;
+    height:1000px;
+    padding-top: 120px;
+    background: #fff;
+}
+
+.about-left{
+    float: left;
+    margin-right:5px;
+    text-align: right;
+    font-size: 20px;  
+}
+
+.about-left div{
+    text-align: right;
+    font-size: 20px;  
+    padding-right: 80px;
+}
+
+.about-right{
+    position: relative;
+    margin-left: 492.5px;
+}
+
+.about-portrait{
+    position: absolute;
+    top:-70px;
+    left: 404px;
+    z-index: 1;
+    border: solid 8px rgb(225, 238, 210);
+    border-radius: 50%;
+}
+
+.about-name{
+    padding: 20px 40px;
+    height: 80px;
+}
+
+.about-name-right{
+    text-indent: 2em;
+    padding-right: 150px;
+}
+
+.about-contact{
+    position: relative;
+    padding: 130px 40px 20px 40px;
+    height: 80px;
+}
+
+/*教育经历*/
+
+.about-edu{
+    position: relative;
+    padding: 130px 40px 20px 40px;
+    height: 160px;
+}
+
+.about-job{
+    position: relative;
+    padding: 130px 40px 20px 40px;
+    height: 160px;
+}
+
+.about-imformation{
+    position: relative;
+    padding:0 0 30px 10px;
+}
+
+.about-imformation :first-child{
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    left:-77.5px;
+    top: 5px;
+    background: #fff;
+    border: solid 5px rgb(225, 238, 210);
+    border-radius: 10px;
+}
+
+/*图片居中*/
+
+.about-pic{
+    position: absolute;
+    top: 0;
+    left: -57.5px;
+    width: 100px;
+    height: 100px;
+    border: solid 5px rgb(225, 238, 210);
+    border-radius: 50%;
+}
+
+
 /*页脚的样式*/
 
 .footer{
-    position: relative;
+    position: relative;/*20161014 relative ==> absolute*/
     width: 100%;
     color: #fff;
     background:rgb(209, 73, 78);
