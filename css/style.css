@@ -367,40 +367,107 @@ body{
 
 .gallery-content{
     position: relative;
-    padding: 20px;
-    min-height: 500px;
+    padding: 20px 20px 60px 20px;
+    min-height: 600px;
     background: #fff;
     margin-top: 70px;
 }
+
+.gallery-article article{
+    margin-bottom: 10px; 
+}
+
+.gallery-article img{
+    width: 100%;
+}
+
+.article-text-warp{
+    padding: 10px;
+}
+
+.article-text-warp *{
+    color: #fff;
+    line-height: 170%;
+}
+
+.article-text-warp p{
+    font-size: 12px;
+}
+
+.article-type{
+    float: left;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+
+.article-text{
+    margin-left: 35px;
+}
+
+/*瀑布流布局*/
+
+.article-left{
+    float: left;
+    width: 325px;
+    margin-right:10px;
+}
+
+.article-center,.article-left-left{
+    float: left;
+    width: 157.5px;
+    margin-right:10px;
+}
+
+.article-right,.article-left-right{
+    float: left;
+    width: 157.5px;
+}
+
+/*对应颜色*/
+
+.article-js{
+    background: rgba(209, 73, 78,1);
+}
+
+.article-ui{
+    background: rgba(230, 155, 3,1);
+}
+
+.article-frame{
+    background: rebeccapurple;
+}
+.article-app{
+    background: rgba(18, 53, 85,1);
+}
+
 
 /*gallery标签*/
 
 .gallery-tab{
     position: absolute;
-    margin-top: -75px;
-    margin-left: -20px;
-}
-
-
-.gallery-tab ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    top:-56px;
+    left: 0;
+    height: 60px;
+    margin-bottom: 100px;
 }
 
 .gallery-tab a{
-    text-decoration: none;
-    color: rgba(18, 53, 85,1);
-}
-
-.gallery-tab li{
     float: left;
+    text-decoration: none;
+    height: 20px;
     padding: 15px;
-    margin: 0 1px 0 0;
-    background: #fff;
+    margin-right: 1px;
+    background-color: #fff;
+    color: rgba(18, 53, 85,0.5);
 }
 
-.gallery-tab li:hover{
+.gallery-tab a:hover{
+    color: rgba(18, 53, 85,1);
     border-bottom: solid 1px #fff;
 }
 
@@ -435,7 +502,6 @@ body{
 .tab-app:hover{
     border-top: solid 5px rgba(255, 238, 210,1);
 }
-
 
 /*gallery中的人气排行榜*/
 
