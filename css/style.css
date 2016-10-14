@@ -79,7 +79,7 @@ body{
     position: relative;
     width: 980px;
     margin-bottom: 200px;
-    margin-top: 100px;
+    padding-top: 100px;
  }   
 
 /*index页面*/
@@ -185,12 +185,12 @@ body{
     text-indent: 2em;
 }
 
-/*article页面*/
+/*gallery页面*/
 
 .main-article-warp{
     position: relative;
     width: 700px;
-    margin: 20px 0;
+    margin: 0;
 }
 
 /*article-label*/
@@ -472,7 +472,6 @@ body{
     padding: 20px 20px 60px 20px;
     min-height: 600px;
     background: #fff;
-    margin-top: 70px;
 }
 
 .gallery-article article{
@@ -670,8 +669,94 @@ body{
     width: 20%;
 }
 
+/*about页面样式*/
+.about-warp{
+    overflow: hidden;
+}
 
-/*about.html页面样式*/
+.about-left{
+    float: left;
+    width: 487.5px;
+    min-height: 500px;
+    background: #fff;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+}
+
+.about-right{
+    float: left;
+    position: relative;
+    background: #fff;
+    width: 487.5px;
+    margin-left: 5px;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+}
+
+.pic-name{
+    position: absolute;
+    top: -70px;
+    left: -85px;
+    width: 160px;
+    border: solid 5px rgb(225, 238, 210);
+    border-radius: 50%;
+}
+
+
+.about-name p{
+    text-indent: 2em;
+}
+
+.about-info h1{
+    position: absolute;
+    margin-left: -190px;
+    font-size: 20px;
+}
+
+.about-info{
+    position: relative;
+    padding: 120px 30% 20px 50px;
+}
+
+.about-pic{
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 100px;
+    border: solid 5px rgb(225, 238, 210);
+    border-radius: 50%;
+}
+
+.about-information{
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+.about-information p{
+    line-height: 150%;
+}
+
+.info-year{
+    position: absolute;
+    top: 0;
+    left: -87.5px;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    background: #fff;
+    border: solid 5px rgb(225, 238, 210);
+    border-radius: 10px;
+}
+
+/*结尾边框*/
+.about-work{
+    margin-bottom: 100px;
+}
+
+
+/*about.html页面样式
+
+
 
 .about-left,.about-right{  
     width: 487.5px;
@@ -723,7 +808,7 @@ body{
     height: 80px;
 }
 
-/*教育经历*/
+教育经历
 
 .about-edu{
     position: relative;
@@ -754,7 +839,7 @@ body{
     border-radius: 10px;
 }
 
-/*图片居中*/
+图片居中
 
 .about-pic{
     position: absolute;
@@ -765,7 +850,7 @@ body{
     border: solid 5px rgb(225, 238, 210);
     border-radius: 50%;
 }
-
+*/
 
 /*页脚的样式*/
 
