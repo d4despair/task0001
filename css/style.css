@@ -143,11 +143,15 @@ body{
     height: 180px;
 }
 
+.post div{
+    
+    padding: 15px 30px 25px 30px;
+}
+
 .post p{
     font-size: 12px;
     line-height: 170%;
     text-indent: 2em;
-    padding: 15px 30px 25px 30px;
 }
 
 /*自我介绍*/
